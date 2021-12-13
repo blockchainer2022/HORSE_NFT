@@ -1,0 +1,30 @@
+.hero-section,
+.stack-section,
+.mint-section,
+.about-section,
+.roadmap {
+  min-height: 100vh;
+  background-image: url(../assets/images/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.stack-section {
+  background-image: url(../assets/images/stack-bg.png);
+  min-height: 50vh;
+}
+
+.mint-section {
+  background-image: url(../assets/images/mint-bg.png);
+  min-height: auto;
+}
+.about-section {
+  background-image: url(../assets/images/about-bg.png);
+  min-height: auto;
+}
+.roadmap {
+  background-image: url(../assets/images/roadmap.png);
+  min-height: auto;
+}
+img {
+  width: 100%;
+}
