@@ -5,7 +5,7 @@ import {
   StackSection,
   MintSection,
   AboutSection,
-  FaqSection,
+  // FaqSection,
 } from "../sections";
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
         <StackSection />
         <MintSection />
         <AboutSection />
-        <FaqSection />
+        {/* <FaqSection /> */}
       </Layout>
     </div>
   );
