@@ -65,14 +65,17 @@ const Index = () => {
         </div>
         <ul className=" grid grid-flow-row gap-3  text-white">
           <li>
-            <Link to="/" className="p-3 pb-1  block text-3xl uppercase">
+            <CustomLink to="/" className="p-3 pb-1  block text-3xl uppercase">
               Home
-            </Link>
+            </CustomLink>
           </li>
           <li>
-            <Link to="/game" className="p-3 pb-1 block text-3xl uppercase">
+            <CustomLink
+              to="/game"
+              className="p-3 pb-1 block text-3xl uppercase"
+            >
               Game
-            </Link>
+            </CustomLink>
           </li>
           <Button>Mint now</Button>
           <Button>Connect Wallet</Button>
@@ -91,7 +94,7 @@ function CustomLink({ children, to, ...props }) {
   return (
     <div>
       <Link
-        className={`p-3 pb-1 uppercase  inline-block ${
+        className={`p-3 pb-1 uppercase  block ${
           match ? "text-white" : "text-brown"
         } text-3xl`}
         to={to}
