@@ -12,13 +12,12 @@ const accordianData = [
       " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin. ",
   },
   {
-    question: "Q. When is the Public mint?",
+    question: " When is the Public mint?",
     answer: " 22nd December 2021, 3PM EST",
   },
   {
-    question: "Q. When is the initial mint?",
-    answer:
-      " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
+    question: " How much will it cost to mint?",
+    answer: "0.057 ETH + gas for Whitelist and 0.07 ETH + gas for public sale",
   },
 ];
 
