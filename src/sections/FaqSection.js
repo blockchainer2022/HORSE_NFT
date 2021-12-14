@@ -2,24 +2,18 @@ import { useState } from "react";
 
 const accordianData = [
   {
-    question: "Q. What is Horse Game?",
+    question: "What is Horse Game?",
     answer:
-      "A. Horse Game is a new, creative P2E game that brings the world of Horseing to the NFT space with utility. As Horse ers our team understands the importance of patience, and perseverance. We aren’t here to cheat the process, or the time that is actually required to set this project up and look forward to everyone joining us on this journey. On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin. ",
+      " Horse Game is a new, creative P2E game that brings the world of horse racing to the NFT space with utility. Allowing all holders to stake their NFT’s, to earn $HRSE tokens which will be used as an in-game currency to train and improve the speed, strength and stamina of the horses during races. $HRSE tokens will also be used to bet on your own and other Horse races. After the game is launched, non-holders will be able to place bets on your Horse against others. The holder of the winning Horses shall receive a % (TBC) of all bets placed.",
   },
   {
-    question: "Q. When is the initial mint?",
+    question: "When is the Pre-Sale mint?",
     answer:
       " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin. ",
   },
   {
-    question: "Q. When is the initial mint?",
-    answer:
-      " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
-  },
-  {
-    question: "Q. When is the initial mint?",
-    answer:
-      " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
+    question: "Q. When is the Public mint?",
+    answer: " 22nd December 2021, 3PM EST",
   },
   {
     question: "Q. When is the initial mint?",
