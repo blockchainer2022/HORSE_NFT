@@ -44,7 +44,7 @@ const Index = () => {
             <li>
               <Link
                 to="/"
-                className="p-3 pb-1  inline-block text-4xl uppercase"
+                className="p-3 pb-1  inline-block text-3xl uppercase"
               >
                 Home
               </Link>
@@ -52,7 +52,7 @@ const Index = () => {
             <li>
               <Link
                 to="/game"
-                className="p-3 pb-1 uppercase  inline-block text-primary-400 text-4xl"
+                className="p-3 pb-1 uppercase  inline-block text-primary-400 text-3xl"
               >
                 Game
               </Link>

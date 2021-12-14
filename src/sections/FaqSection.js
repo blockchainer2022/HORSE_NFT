@@ -16,6 +16,10 @@ const accordianData = [
     answer: " 22nd December 2021, 3PM EST",
   },
   {
+    question: "What is the supply?",
+    answer: "There will be a total of 7,777 Genesis Horses.",
+  },
+  {
     question: " How much will it cost to mint?",
     answer: "0.057 ETH + gas for Whitelist and 0.07 ETH + gas for public sale",
   },
@@ -29,10 +33,6 @@ const accordianData = [
       "You will have 48 hours for the pre-sale mint. We will probably sell out faster so please ensure you’re early Genesis Horses can be staked in order to earn $HRSE will be an in-game currency allowing you to earn, train and bet on your horses",
   },
 
-  {
-    question: "What is the supply?",
-    answer: "There will be a total of 7,777 Genesis Horses.",
-  },
   {
     question: "When will the game be out?",
     answer:

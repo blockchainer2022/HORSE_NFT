@@ -2,6 +2,7 @@ import Image1 from "../assets/images/mint1.png";
 import Image2 from "../assets/images/mint2.png";
 import Eth from "../assets/images/ETH.png";
 import Button from "../components/button";
+import { Link } from "react-router-dom";
 const MintSection = () => {
   return (
     <section className="py-20 mint-section">
@@ -50,14 +51,16 @@ const MintSection = () => {
               </p>
             </div>
             <div className="font-sans text-center">
-              <Button
-                style={{
-                  paddingRight: "50px",
-                  paddingLeft: "50px",
-                }}
-              >
-                MINT NOW
-              </Button>
+              <Link to="game">
+                <Button
+                  style={{
+                    paddingRight: "50px",
+                    paddingLeft: "50px",
+                  }}
+                >
+                  MINT NOW
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
