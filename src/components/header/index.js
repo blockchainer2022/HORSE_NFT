@@ -51,7 +51,9 @@ const Index = () => {
         </div>
         <div className=" gap-4 grid-flow-col hidden md:grid">
           <div className="hidden lg:block">
-            <Button>Mint now</Button>
+            <Link to="/game">
+              <Button>Mint now</Button>
+            </Link>
           </div>
           <Button>Connect Wallet</Button>
         </div>
