@@ -19,6 +19,10 @@ const accordianData = [
     question: " How much will it cost to mint?",
     answer: "0.057 ETH + gas for Whitelist and 0.07 ETH + gas for public sale",
   },
+  {
+    question: " How many can I mint?",
+    answer: "There will be 3 mints allocated per address",
+  },
 ];
 
 const FaqSection = () => {
