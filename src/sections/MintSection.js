@@ -21,33 +21,33 @@ const MintSection = () => {
               <img src={Image2} alt="" />
             </div>
           </div>
-          <div className="lg:col-span-5 font-serif   pt-10">
+          <div className="lg:col-span-5  pt-10">
             <div className="flex justify-center items-center">
               <img src={Eth} className="w-auto" alt="" />
-              <p className="text-primary-400 text-2xl ml-2">
+              <p className="text-primary-400 text-3xl ml-2">
                 <b>0.057/</b>
                 <span className="">Mint</span>
               </p>
             </div>
             <div className="flex items-center justify-center mt-6">
-              <button className="w-12 h-12 bg-primary-400 rounded-full font-bold text-2xl">
+              <button className="w-12 h-12 bg-primary-400 rounded-full font-bold text-3xl">
                 -
               </button>
               <div className="h-12 w-48 mx-2  border-4 border-primary-400 rounded-full p-1">
                 <input
                   type="text"
-                  className="focus:outline-none w-full h-full text-primary-400 font-bold text-center text-xl border-0 bg-transparent"
+                  className="focus:outline-none w-full h-full text-primary-400 font-bold text-center text-3xl border-0 bg-transparent"
                   defaultValue={2}
                 />
               </div>
-              <button className="w-12 h-12 bg-primary-400 rounded-full font-bold text-2xl">
+              <button className="w-12 h-12 bg-primary-400 rounded-full font-bold text-3xl">
                 +
               </button>
             </div>
             <div className="h-1 bg-primary-400  rounded-xl mt-8 max-w-sm w-full mx-auto lg:mx-20"></div>
             <div className="flex justify-center items-center my-6">
               <img src={Eth} className="w-auto" alt="" />
-              <p className="text-primary-400 text-2xl ml-2">
+              <p className="text-primary-400 text-3xl ml-2">
                 <b>0.1500</b> Total
               </p>
             </div>
