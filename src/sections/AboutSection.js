@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const textList = [
   "Today begins the Great Rescue of 13,809 Sheep and Wolves.",
   "I introduce you to the new Wolf Game, a full-feature blockchain economy to be released in 2022.",
@@ -16,8 +17,8 @@ const About = () => {
   return (
     <section className="about-section py-20">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-brown p-8">
+        <div className="grid grid-cols-1 gap-8">
+          {/* <div className="bg-brown p-8">
             <h4 className="font-bold text-4xl mb-10">About Horse game</h4>
             <ul className="mt-4">
               {textList.map((v, i) => (
@@ -33,8 +34,8 @@ const About = () => {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="roadmap p-8">
+          </div> */}
+          <div className="roadmap p-8 text-center lg:px-20 lg:mx-20">
             <h4 className="font-bold text-4xl mb-10">Horse game RoadMap </h4>
             <p className="text-2xl">ART COLLECTION</p>
             <p className="text-lg my-4">
