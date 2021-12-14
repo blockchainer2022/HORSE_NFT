@@ -28,3 +28,7 @@
 img {
   width: 100%;
 }
+
+.max-h {
+  max-height: 1000px;
+}

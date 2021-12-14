@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section className="about-section py-20">
       <div className="container">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-brown p-8">
             <h4 className="font-bold text-4xl mb-10">About Horse game</h4>
             <ul className="mt-4">

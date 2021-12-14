@@ -11,8 +11,8 @@ const MintSection = () => {
           0.05 ETH for whitelist and 0.075 ETH for public
         </p>
 
-        <div className="mt-10 bg-white p-16 rounded-2xl grid grid-cols-12">
-          <div className="col-span-7 grid grid-cols-2 gap-10">
+        <div className="mt-10 bg-white p-8 md:p-16 rounded-2xl grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="lg:col-span-7 grid grid-cols-2 gap-4 sm:gap-10">
             <div>
               <img src={Image1} alt="" />
             </div>
@@ -20,7 +20,7 @@ const MintSection = () => {
               <img src={Image2} alt="" />
             </div>
           </div>
-          <div className="col-span-5 font-serif pl-20 pr-10 pt-10">
+          <div className="lg:col-span-5 font-serif   pt-10">
             <div className="flex justify-center items-center">
               <img src={Eth} className="w-auto" alt="" />
               <p className="text-primary-400 text-2xl ml-2">
@@ -42,7 +42,7 @@ const MintSection = () => {
                 +
               </button>
             </div>
-            <div className="h-1 bg-primary-400 mx-auto rounded-xl mt-8"></div>
+            <div className="h-1 bg-primary-400  rounded-xl mt-8 max-w-sm w-full mx-auto lg:mx-20"></div>
             <div className="flex justify-center items-center my-6">
               <img src={Eth} className="w-auto" alt="" />
               <p className="text-primary-400 text-2xl ml-2">
