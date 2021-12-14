@@ -8,7 +8,7 @@ const accordianData = [
   },
   {
     question: "When is the Pre-Sale mint?",
-    answer: "20th December, PM EST",
+    answer: "20th December, 3PM EST",
   },
   {
     question: " When is the Public mint?",
