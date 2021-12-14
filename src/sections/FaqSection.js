@@ -23,6 +23,21 @@ const accordianData = [
     question: " How many can I mint?",
     answer: "There will be 3 mints allocated per address",
   },
+  {
+    question: "How long will you have to mint?",
+    answer:
+      "You will have 48 hours for the pre-sale mint. We will probably sell out faster so please ensure you’re early Genesis Horses can be staked in order to earn $HRSE will be an in-game currency allowing you to earn, train and bet on your horses",
+  },
+
+  {
+    question: "What is the supply?",
+    answer: "There will be a total of 7,777 Genesis Horses.",
+  },
+  {
+    question: "When will the game be out?",
+    answer:
+      " We are looking at 2 weeks post mint, allowing all holders to be able to stake and earn a significant amount of $HRSE before launch and ensure the game runs smoothly.",
+  },
 ];
 
 const FaqSection = () => {
