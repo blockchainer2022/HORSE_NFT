@@ -37,7 +37,7 @@ const MintSection = () => {
                 <input
                   type="text"
                   className="focus:outline-none w-full h-full text-primary-400 font-bold text-center text-3xl border-0 bg-transparent"
-                  defaultValue={2}
+                  defaultValue={1}
                 />
               </div>
               <button className="w-12 h-12 bg-primary-400 rounded-full font-bold text-3xl">
@@ -48,7 +48,7 @@ const MintSection = () => {
             <div className="flex justify-center items-center my-6">
               <img src={Eth} className="w-auto" alt="" />
               <p className="text-primary-400 text-3xl ml-2">
-                <b>0.1500</b> Total
+                <b>0.057</b> Total
               </p>
             </div>
             <div className="font-sans text-center">
