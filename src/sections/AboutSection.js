@@ -54,9 +54,11 @@ const About = () => {
               ))}
             </ul>
             <p className="text-3xl my-4 uppercase underline">
-              PRE-SALE: 24 HOUR WINDOW
+              PRE-SALE: 48 HOUR WINDOW
             </p>
-            <p className="text-3xl my-4 uppercase">LAunch: sold out</p>
+            <p className="text-3xl my-4 uppercase underline">
+              LAunch: sold out
+            </p>
             <p className="text-4xl my-6 uppercase underline">
               Phase 1: staking
             </p>

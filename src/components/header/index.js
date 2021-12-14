@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Logo from "../../assets/images/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import Button from "../button";
 import "./style.css";
 const Index = () => {
@@ -42,20 +42,10 @@ const Index = () => {
           </div>
           <ul className="hidden md:flex items-center ml-20">
             <li>
-              <Link
-                to="/"
-                className="p-3 pb-1  inline-block text-3xl uppercase"
-              >
-                Home
-              </Link>
+              <CustomLink to="/">Home</CustomLink>
             </li>
             <li>
-              <Link
-                to="/game"
-                className="p-3 pb-1 uppercase  inline-block text-primary-400 text-3xl"
-              >
-                Game
-              </Link>
+              <CustomLink to="/game">Game</CustomLink>
             </li>
           </ul>
         </div>
@@ -93,3 +83,22 @@ const Index = () => {
 };
 
 export default Index;
+
+function CustomLink({ children, to, ...props }) {
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
+
+  return (
+    <div>
+      <Link
+        className={`p-3 pb-1 uppercase  inline-block ${
+          match ? "text-white" : "text-brown"
+        } text-3xl`}
+        to={to}
+        {...props}
+      >
+        {children}
+      </Link>
+    </div>
+  );
+}

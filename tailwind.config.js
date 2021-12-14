@@ -26,6 +26,7 @@ module.exports = {
         primary: {
           400: "#182535",
         },
+        brown: "#6E2321",
       },
       borderColor: {
         primary: {
