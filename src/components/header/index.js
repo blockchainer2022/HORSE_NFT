@@ -42,14 +42,17 @@ const Index = () => {
           </div>
           <ul className="hidden md:flex items-center ml-20">
             <li>
-              <Link to="/" className="p-3 pb-1  inline-block text-3xl">
+              <Link
+                to="/"
+                className="p-3 pb-1  inline-block text-4xl uppercase"
+              >
                 Home
               </Link>
             </li>
             <li>
               <Link
                 to="/game"
-                className="p-3 pb-1  inline-block text-primary-400 text-3xl"
+                className="p-3 pb-1 uppercase  inline-block text-primary-400 text-4xl"
               >
                 Game
               </Link>
@@ -72,12 +75,12 @@ const Index = () => {
         </div>
         <ul className=" grid grid-flow-row gap-3  text-white">
           <li>
-            <Link to="/" className="p-3 pb-1  block">
+            <Link to="/" className="p-3 pb-1  block text-3xl uppercase">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/game" className="p-3 pb-1 block ">
+            <Link to="/game" className="p-3 pb-1 block text-3xl uppercase">
               Game
             </Link>
           </li>

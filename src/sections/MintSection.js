@@ -6,7 +6,7 @@ const MintSection = () => {
   return (
     <section className="py-20 mint-section">
       <div className="container">
-        <h2 className="text-center font-bold text-5xl mb-1">Mint your horse</h2>
+        <h2 className="text-center font-bold text-5xl mb-1">MINT YOUR HORSE</h2>
         <p className="text-center text-2xl my-4">
           0.057 ETH for Whitelist and 0.07 ETH for Public Sale
         </p>
@@ -57,7 +57,7 @@ const MintSection = () => {
                   paddingLeft: "40px",
                 }}
               >
-                Mint Now
+                MINT NOW
               </Button>
             </div>
           </div>

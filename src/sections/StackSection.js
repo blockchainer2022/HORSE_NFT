@@ -19,7 +19,7 @@ const StackSection = () => {
           </div>
         </div>
         <div className="text-center mt-10">
-          <WhiteButton>Stak Your Horse</WhiteButton>
+          <WhiteButton>STAKE YOUR HORSE</WhiteButton>
         </div>
       </div>
     </section>
