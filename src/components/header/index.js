@@ -77,7 +77,9 @@ const Index = () => {
               Game
             </CustomLink>
           </li>
-          <Button>Mint now</Button>
+          <Link to="/game">
+            <Button>Mint now</Button>
+          </Link>
           <Button>Connect Wallet</Button>
         </ul>
       </div>

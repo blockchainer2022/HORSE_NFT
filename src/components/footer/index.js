@@ -8,15 +8,20 @@ const Index = () => {
             {/* <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
               <i class="fab fa-telegram"></i>
             </div> */}
-            <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
+            {/* <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
               <i class="fab fa-discord"></i>
-            </div>
+            </div> */}
             {/* <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
               <i class="fab fa-instagram"></i>
             </div> */}
-            <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
+            <a
+              href="https://twitter.com/HorseGameNFT"
+              target="_blank"
+              className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer"
+              rel="noreferrer"
+            >
               <i class="fab fa-twitter"></i>
-            </div>
+            </a>
           </div>
         </div>
         <div className="font-serif font-bold text-center text-white pt-10">
