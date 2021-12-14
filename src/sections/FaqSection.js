@@ -53,9 +53,7 @@ const FaqSection = () => {
   return (
     <section className="py-20 bg-brown " id="faq">
       <div className="container">
-        <h2 className="text-3xl lg:text-5xl mb-10 text-center uppercase">
-          Faqs
-        </h2>
+        <h2 className="text-3xl lg:text-5xl mb-10 text-center ">FAQs</h2>
         <div className="md:mx-20">
           {accordianData.map((v, i) => (
             <div

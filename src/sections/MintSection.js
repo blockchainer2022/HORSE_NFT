@@ -52,9 +52,8 @@ const MintSection = () => {
             <div className="font-sans text-center">
               <Button
                 style={{
-                  fontSize: "20px",
-                  paddingRight: "40px",
-                  paddingLeft: "40px",
+                  paddingRight: "50px",
+                  paddingLeft: "50px",
                 }}
               >
                 MINT NOW

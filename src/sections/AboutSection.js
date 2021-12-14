@@ -61,17 +61,23 @@ const About = () => {
               Phase 1: staking
             </p>
             <p className="text-3xl my-4">
-              - Horse Game consists of a collection of 7,777 Genesis Horses
-              where you can stake your Horse to race against other Horses to Win
-              $HRSE tokens, which will be used as the currency in Horse Game.
+              - Horse Game holders are now able to stake their Horses to earn
+              $HRSE tokens. The utility for $HRSE tokens will also allow Horse
+              holders to train their Horses and build speed, strength and
+              stamina in preparation for the Horse Game races.
             </p>
             <p className="text-4xl my-6 uppercase underline">
               Phase 2: staking
             </p>
             <p className="text-3xl my-4">
-              - Horse Game consists of a collection of 7,777 Genesis Horses
-              where you can stake your Horse to race against other Horses to Win
-              $HRSE tokens, which will be used as the currency in Horse Game.
+              - $HRSE tokens will be used as an in-game currency to allow
+              holders to bet on their horse against others in races.
+            </p>
+            <p className="text-3xl my-4">
+              - Non-holders will also be able to bet on horses in game to win
+              $HRSE. These bets will be placed on NFT holders as non-holders
+              cannot take part in races. The winners of the races will get a %
+              (TBC) from the bets placed on them.
             </p>
           </div>
         </div>
