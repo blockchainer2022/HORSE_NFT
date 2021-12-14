@@ -42,14 +42,14 @@ const Index = () => {
           </div>
           <ul className="hidden md:flex items-center ml-20">
             <li>
-              <Link to="/" className="p-3 pb-1  inline-block">
+              <Link to="/" className="p-3 pb-1  inline-block text-3xl">
                 Home
               </Link>
             </li>
             <li>
               <Link
                 to="/game"
-                className="p-3 pb-1  inline-block text-primary-400"
+                className="p-3 pb-1  inline-block text-primary-400 text-3xl"
               >
                 Game
               </Link>

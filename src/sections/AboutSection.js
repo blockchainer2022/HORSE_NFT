@@ -36,31 +36,31 @@ const About = () => {
             </ul>
           </div> */}
           <div className="roadmap p-8 text-center lg:px-20 lg:mx-20">
-            <h4 className="font-bold text-4xl mb-10">Horse game RoadMap </h4>
-            <p className="text-2xl">ART COLLECTION</p>
-            <p className="text-lg my-4">
+            <h4 className="font-bold text-6xl mb-10">Horse game RoadMap </h4>
+            <p className="text-4xl">ART COLLECTION</p>
+            <p className="text-3xl my-4">
               - Horse Game consists of a collection of 7,777 Genesis Horses
               where you can stake your Horse to race against other Horses to Win
               $HRSE tokens, which will be used as the currency in Horse Game.
             </p>
-            <p className="text-2xl">Pre launch</p>
+            <p className="text-4xl">Pre launch</p>
             <ul className="mt-2">
               {prelaunch.map((v, i) => (
-                <li className="text-lg my-4" key={i}>
+                <li className="text-3xl my-4" key={i}>
                   {v}
                 </li>
               ))}
             </ul>
-            <p className="text-2xl my-4">PRE-SALE: 24 HOUR WINDOW</p>
-            <p className="text-2xl my-4">LAunch: sold out</p>
-            <p className="text-2xl my-4">phase 1: stacking</p>
-            <p className="text-lg my-4">
+            <p className="text-3xl my-4">PRE-SALE: 24 HOUR WINDOW</p>
+            <p className="text-3xl my-4">LAunch: sold out</p>
+            <p className="text-4xl my-6">Phase 1: staking</p>
+            <p className="text-3xl my-4">
               - Horse Game consists of a collection of 7,777 Genesis Horses
               where you can stake your Horse to race against other Horses to Win
               $HRSE tokens, which will be used as the currency in Horse Game.
             </p>
-            <p className="text-2xl my-4">phase 2: stacking</p>
-            <p className="text-lg my-4">
+            <p className="text-4xl my-6">Phase 2: staking</p>
+            <p className="text-3xl my-4">
               - Horse Game consists of a collection of 7,777 Genesis Horses
               where you can stake your Horse to race against other Horses to Win
               $HRSE tokens, which will be used as the currency in Horse Game.

@@ -19,7 +19,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Broken Console", "sans-serif"],
+        sans: ["VT323", "monospace"],
         serif: ["Roboto", "sans-serif"],
       },
       textColor: {

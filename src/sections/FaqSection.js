@@ -2,29 +2,29 @@ import { useState } from "react";
 
 const accordianData = [
   {
-    question: "Q. What is Fish Game?",
+    question: "Q. What is Horse Game?",
     answer:
-      "A. Fish Game is a new, creative P2E game that brings the world of fishing to the NFT space with utility. As fishers our team understands the importance of patience, and perseverance. We aren’t here to cheat the process, or the time that is actually required to set this project up and look forward to everyone joining us on this journey. On this fishing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of fish. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin. ",
+      "A. Horse Game is a new, creative P2E game that brings the world of Horseing to the NFT space with utility. As Horse ers our team understands the importance of patience, and perseverance. We aren’t here to cheat the process, or the time that is actually required to set this project up and look forward to everyone joining us on this journey. On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin. ",
   },
   {
     question: "Q. When is the initial mint?",
     answer:
-      " On this fishing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of fish. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin. ",
+      " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin. ",
   },
   {
     question: "Q. When is the initial mint?",
     answer:
-      " On this fishing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of fish. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
+      " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
   },
   {
     question: "Q. When is the initial mint?",
     answer:
-      " On this fishing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of fish. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
+      " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
   },
   {
     question: "Q. When is the initial mint?",
     answer:
-      " On this fishing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of fish. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
+      " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin.",
   },
 ];
 
@@ -53,7 +53,7 @@ const FaqSection = () => {
                 onClick={() => toggle(i)}
               >
                 <h6
-                  className="text-lg md:text-2xl "
+                  className="text-3xl md:text-4xl "
                   style={{ userSelect: "none" }}
                 >
                   {v.question}
@@ -73,7 +73,7 @@ const FaqSection = () => {
                     : "overflow-hidden max-h-0 h-0"
                 }`}
               >
-                <p className=" w-full text-sm md:text-lg">{v.answer}</p>
+                <p className=" w-full text-2xl md:text-3xl">{v.answer}</p>
               </div>
             </div>
           ))}

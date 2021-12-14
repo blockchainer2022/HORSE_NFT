@@ -8,7 +8,7 @@ const MintSection = () => {
       <div className="container">
         <h2 className="text-center font-bold text-5xl mb-1">Mint your horse</h2>
         <p className="text-center text-2xl my-4">
-          0.05 ETH for whitelist and 0.075 ETH for public
+          0.057 ETH for Whitelist and 0.07 ETH for Public Sale
         </p>
 
         <div className="mt-10 bg-white p-8 md:p-16 rounded-2xl grid grid-cols-1 lg:grid-cols-12 gap-6">
