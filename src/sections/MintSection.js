@@ -25,7 +25,8 @@ const MintSection = () => {
             <div className="flex justify-center items-center">
               <img src={Eth} className="w-auto" alt="" />
               <p className="text-primary-400 text-2xl ml-2">
-                <b>0.05/</b>mint
+                <b>0.057/</b>
+                <span className="">Mint</span>
               </p>
             </div>
             <div className="flex items-center justify-center mt-6">

@@ -8,12 +8,11 @@ const accordianData = [
   },
   {
     question: "When is the Pre-Sale mint?",
-    answer:
-      " On this Horseing trip be prepared to have your patience tested as your friends seem to have way better luck than you with catching different species of Horse. Your friends continue laughing at your empty cooler and tell you to start using $WORMS as your bait. After dropping your line in the same spot you find yourself in a battle for the big kahuna. Let the battle begin. ",
+    answer: "20th December 2021, PM EST",
   },
   {
     question: " When is the Public mint?",
-    answer: " 22nd December 2021, 3PM EST",
+    answer: " 22nd December, 3PM EST",
   },
   {
     question: "What is the supply?",

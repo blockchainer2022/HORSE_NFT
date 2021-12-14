@@ -69,7 +69,7 @@ const About = () => {
               stamina in preparation for the Horse Game races.
             </p>
             <p className="text-4xl my-6 uppercase underline">
-              Phase 2: staking
+              Phase 2: Game launch
             </p>
             <p className="text-3xl my-4">
               - $HRSE tokens will be used as an in-game currency to allow

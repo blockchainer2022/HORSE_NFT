@@ -5,15 +5,15 @@ const Index = () => {
         <div className="flex justify-between items-center flex-wrap">
           <h6 className="text-3xl uppercase">Horse game</h6>
           <div className="grid grid-flow-col gap-4 my-4">
-            <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
+            {/* <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
               <i class="fab fa-telegram"></i>
-            </div>
+            </div> */}
             <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
               <i class="fab fa-discord"></i>
             </div>
-            <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
+            {/* <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
               <i class="fab fa-instagram"></i>
-            </div>
+            </div> */}
             <div className="h-10 w-10 rounded-full flex items-center justify-center text-xl bg-white text-primary-400 cursor-pointer">
               <i class="fab fa-twitter"></i>
             </div>
