@@ -7,13 +7,27 @@ import {
   AboutSection,
   FaqSection,
 } from "../sections";
-const Home = () => {
+const Home = ({
+  account,
+  mint,
+  totalSupply,
+  displayPrice,
+  loadWeb3,
+  maxSupply,
+}) => {
   return (
     <div>
-      <Layout>
+      <Layout account={account} mint={mint} loadWeb3={loadWeb3}>
         <HeroSection />
         <StackSection />
-        <MintSection />
+        <MintSection
+          account={account}
+          mint={mint}
+          totalSupply={totalSupply}
+          displayPrice={displayPrice}
+          loadWeb3={loadWeb3}
+          maxSupply={maxSupply}
+        />
         <AboutSection />
         <FaqSection />
       </Layout>

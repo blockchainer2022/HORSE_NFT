@@ -1,9 +1,48 @@
+import { useState } from "react";
 import Image1 from "../assets/images/mint1.png";
 import Image2 from "../assets/images/mint2.png";
 import Eth from "../assets/images/ETH.png";
 import Button from "../components/button";
-import { Link } from "react-router-dom";
-const MintSection = () => {
+// import { Link } from "react-router-dom";
+const MintSection = ({
+  account,
+  mint,
+  totalSupply,
+  displayPrice,
+  loadWeb3,
+  maxSupply,
+}) => {
+  const [value, setValue] = useState(1);
+  const handleChange = (e, newValue) => {
+    const reg = /^[0-9\b]+$/;
+    if (e.target.value === "") {
+      setValue(0);
+    } else {
+      if (reg.test(Number(e.target.value))) {
+        if (Number(e.target.value) <= 20) {
+          setValue(e.target.value);
+        }
+      }
+    }
+  };
+  const increse = () => {
+    if (value < 20) {
+      setValue((prev) => Number(prev) + 1);
+    }
+  };
+  const decrese = () => {
+    if (value > 1) {
+      setValue((prev) => Number(prev) - 1);
+    }
+  };
+
+  const mintHandler = () => {
+    if (account) {
+      mint(value);
+    } else {
+      loadWeb3();
+    }
+  };
   return (
     <section className="py-20 mint-section">
       <div className="container">
@@ -25,22 +64,29 @@ const MintSection = () => {
             <div className="flex justify-center items-center">
               <img src={Eth} className="w-auto" alt="" />
               <p className="text-primary-400 text-3xl ml-2">
-                <b>0.057/</b>
+                <b>{displayPrice}/</b>
                 <span className="">Mint</span>
               </p>
             </div>
             <div className="flex items-center justify-center mt-6">
-              <button className="w-12 h-12 bg-primary-400 rounded-full font-bold text-3xl">
+              <button
+                className="w-12 h-12 bg-primary-400 rounded-full font-bold text-3xl"
+                onClick={decrese}
+              >
                 -
               </button>
               <div className="h-12 w-48 mx-2  border-4 border-primary-400 rounded-full p-1">
                 <input
                   type="text"
                   className="focus:outline-none w-full h-full text-primary-400 font-bold text-center text-3xl border-0 bg-transparent"
-                  defaultValue={1}
+                  value={value}
+                  onChange={handleChange}
                 />
               </div>
-              <button className="w-12 h-12 bg-primary-400 rounded-full font-bold text-3xl">
+              <button
+                className="w-12 h-12 bg-primary-400 rounded-full font-bold text-3xl"
+                onClick={increse}
+              >
                 +
               </button>
             </div>
@@ -48,20 +94,21 @@ const MintSection = () => {
             <div className="flex justify-center items-center my-6">
               <img src={Eth} className="w-auto" alt="" />
               <p className="text-primary-400 text-3xl ml-2">
-                <b>0.057</b> Total
+                <b>{(displayPrice * value).toFixed(4)}</b> Total
               </p>
             </div>
             <div className="font-sans text-center">
-              <Link to="game">
+              <>
                 <Button
+                  onClick={mintHandler}
                   style={{
                     paddingRight: "50px",
                     paddingLeft: "50px",
                   }}
                 >
-                  MINT NOW
+                  {account ? "Mint Now" : "Connect Wallet"}
                 </Button>
-              </Link>
+              </>
             </div>
           </div>
         </div>

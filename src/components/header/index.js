@@ -3,7 +3,7 @@ import Logo from "../../assets/images/Logo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import Button from "../button";
 import "./style.css";
-const Index = () => {
+const Index = ({ account, mint, loadWeb3 }) => {
   const [show, setShow] = useState(false);
 
   const menuHandler = () => {
@@ -55,7 +55,12 @@ const Index = () => {
               <Button>Mint now</Button>
             </Link>
           </div>
-          <Button>Connect Wallet</Button>
+          <Button onClick={loadWeb3}>
+            {" "}
+            {account
+              ? account.slice(0, 8) + "..." + account.slice(account.length - 5)
+              : "CONNECT WALLET"}
+          </Button>
         </div>
         <button className="text-lg md:hidden" onClick={menuHandler}>
           <i class="fas fa-bars"></i>
