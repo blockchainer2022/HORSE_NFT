@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import Game from "./pages/Game";
+import axios from "axios";
 toast.configure();
 function App() {
   const [chainId, setChainId] = useState(null);
@@ -32,7 +33,7 @@ function App() {
   const [confirmTransaction, setConfirmTransaction] = useState(false);
   const [preSaleEligibility, setPreSaleEligibility] = useState(false);
   const [saleLive, setSaleLive] = useState(false);
-  const [preSale, setPreSale] = useState(false);
+  const [whitelist, setWhiteList] = useState(false);
 
   async function loadWeb3() {
     if (window.ethereum) {
@@ -134,43 +135,53 @@ function App() {
   async function mint(mintCount) {
     if (contract) {
       if (chainId === 4) {
-        const saleOpen = await contract.methods.saleOpen().call();
+        const saleOpen = await contract.methods.presaleOpen().call();
         if (saleOpen) {
-          if (!mintCount || mintCount === 0) {
-            setLessMintAmountAlert(true);
-          } else {
-            setConfirmTransaction(true);
-            const finalPrice = Number(price) * mintCount;
-            contract.methods
-              .mintNFT(mintCount)
-              .send({ from: account, value: finalPrice })
-              .on("transactionHash", function () {
-                setConfirmTransaction(false);
-                setMintingInProgress(true);
-              })
-              .on("confirmation", function () {
-                const el = document.createElement("div");
-                el.innerHTML =
-                  "View minted NFT on OpenSea : <a href='https://testnets.opensea.io/account '>View Now</a>";
+          const { data } = await axios.get(
+            `https://defi.mobiwebsolutionz.com/nft/horse/verify_whitelist.php?wallet_address=${account}`
+          );
+          const isVerified = data.verified;
+          // console.log(isVerified, typeof data.verified);
+          if (isVerified) {
+            if (mintCount === 0) {
+              setLessMintAmountAlert(true);
+            } else {
+              setConfirmTransaction(true);
+              const finalPrice = Number(price) * mintCount;
+              contract.methods
+                .mintNFT(mintCount)
+                .send({ from: account, value: finalPrice })
+                .on("transactionHash", function () {
+                  setConfirmTransaction(false);
+                  setMintingInProgress(true);
+                })
+                .on("confirmation", function () {
+                  const el = document.createElement("div");
+                  el.innerHTML =
+                    "View minted NFT on OpenSea : <a href='https://testnets.opensea.io/account '>View Now</a>";
 
-                setNftMinted(true);
-                setConfirmTransaction(false);
-                setMintingInProgress(false);
-                setTimeout(() => {
-                  window.location.reload(false);
-                }, 5000);
-              })
-              .on("error", function (error, receipt) {
-                if (error.code === 4001) {
-                  setTransactionRejected(true);
+                  setNftMinted(true);
                   setConfirmTransaction(false);
                   setMintingInProgress(false);
-                } else {
-                  setTransactionFailed(true);
-                  setConfirmTransaction(false);
-                  setMintingInProgress(false);
-                }
-              });
+                  setTimeout(() => {
+                    window.location.reload(false);
+                  }, 5000);
+                })
+                .on("error", function (error, receipt) {
+                  if (error.code === 4001) {
+                    setTransactionRejected(true);
+                    setConfirmTransaction(false);
+                    setMintingInProgress(false);
+                  } else {
+                    setTransactionFailed(true);
+                    setConfirmTransaction(false);
+                    setMintingInProgress(false);
+                  }
+                });
+            }
+          } else {
+            // alert("you are not white listed");
+            setWhiteList(true);
           }
         } else {
           setSaleLive(true);
@@ -182,6 +193,7 @@ function App() {
       setEthereumCompatibleBrowser(true);
     }
   }
+
   return (
     <BrowserRouter>
       <div className="App text-white font-sans">
@@ -203,16 +215,17 @@ function App() {
         </Routes>
       </div>
       <InformationModal
-        open={preSale}
-        onClose={setPreSale}
-        title="No presale or sale open yet"
-        text="No presale or sale open yet. Follow us on Discord and Twitter fo the updates"
+        open={whitelist}
+        onClose={setWhiteList}
+        title="Oops"
+        text="You are not whitelisted"
       />
+
       <InformationModal
         open={saleLive}
         onClose={setSaleLive}
-        title="No sale open yet"
-        text="No sale open yet. Please follow our discord for the updates"
+        title="No preSale open yet"
+        text="No Presale open yet. Please follow our discord for the updates"
       />
       <InformationModal
         open={preSaleEligibility}
