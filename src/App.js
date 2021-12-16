@@ -134,41 +134,46 @@ function App() {
   async function mint(mintCount) {
     if (contract) {
       if (chainId === 4) {
-        if (mintCount === 0) {
-          setLessMintAmountAlert(true);
-        } else {
-          setConfirmTransaction(true);
-          const finalPrice = Number(price) * mintCount;
-          contract.methods
-            .mintNFT(mintCount)
-            .send({ from: account, value: finalPrice })
-            .on("transactionHash", function () {
-              setConfirmTransaction(false);
-              setMintingInProgress(true);
-            })
-            .on("confirmation", function () {
-              const el = document.createElement("div");
-              el.innerHTML =
-                "View minted NFT on OpenSea : <a href='https://testnets.opensea.io/account '>View Now</a>";
+        const saleOpen = await contract.methods.saleOpen().call();
+        if (saleOpen) {
+          if (!mintCount || mintCount === 0) {
+            setLessMintAmountAlert(true);
+          } else {
+            setConfirmTransaction(true);
+            const finalPrice = Number(price) * mintCount;
+            contract.methods
+              .mintNFT(mintCount)
+              .send({ from: account, value: finalPrice })
+              .on("transactionHash", function () {
+                setConfirmTransaction(false);
+                setMintingInProgress(true);
+              })
+              .on("confirmation", function () {
+                const el = document.createElement("div");
+                el.innerHTML =
+                  "View minted NFT on OpenSea : <a href='https://testnets.opensea.io/account '>View Now</a>";
 
-              setNftMinted(true);
-              setConfirmTransaction(false);
-              setMintingInProgress(false);
-              setTimeout(() => {
-                window.location.reload(false);
-              }, 5000);
-            })
-            .on("error", function (error, receipt) {
-              if (error.code === 4001) {
-                setTransactionRejected(true);
+                setNftMinted(true);
                 setConfirmTransaction(false);
                 setMintingInProgress(false);
-              } else {
-                setTransactionFailed(true);
-                setConfirmTransaction(false);
-                setMintingInProgress(false);
-              }
-            });
+                setTimeout(() => {
+                  window.location.reload(false);
+                }, 5000);
+              })
+              .on("error", function (error, receipt) {
+                if (error.code === 4001) {
+                  setTransactionRejected(true);
+                  setConfirmTransaction(false);
+                  setMintingInProgress(false);
+                } else {
+                  setTransactionFailed(true);
+                  setConfirmTransaction(false);
+                  setMintingInProgress(false);
+                }
+              });
+          }
+        } else {
+          setSaleLive(true);
         }
       } else {
         setswitchToMainnet(true);
@@ -206,8 +211,8 @@ function App() {
       <InformationModal
         open={saleLive}
         onClose={setSaleLive}
-        title="No presale or sale open yet"
-        text="No presale or sale open yet. Please follow our discord for the updates"
+        title="No sale open yet"
+        text="No sale open yet. Please follow our discord for the updates"
       />
       <InformationModal
         open={preSaleEligibility}
