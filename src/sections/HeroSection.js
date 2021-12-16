@@ -1,6 +1,6 @@
 import "./style.css";
 import { WhiteButton } from "../components/button";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="hero-section flex justify-center  items-end py-14">
