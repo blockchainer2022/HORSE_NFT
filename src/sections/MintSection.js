@@ -44,7 +44,7 @@ const MintSection = ({
     }
   };
   return (
-    <section className="py-20 mint-section">
+    <section className="py-20 mint-section" id="mint">
       <div className="container">
         <h2 className="text-center font-bold text-5xl mb-1">MINT YOUR HORSE</h2>
         <p className="text-center text-2xl my-4">

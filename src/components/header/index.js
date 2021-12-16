@@ -9,14 +9,6 @@ const Index = ({ account, mint, loadWeb3 }) => {
   const menuHandler = () => {
     setShow((prev) => !prev);
   };
-  // const loginHandler = () => {
-  //   if (!account) {
-  //     setShowLogin((prev) => !prev);
-  //   }
-  //   if (account) {
-  //     setShowLogout((prev) => !prev);
-  //   }
-  // };
 
   const menuRef = useRef(null);
   useEffect(() => {
@@ -51,9 +43,9 @@ const Index = ({ account, mint, loadWeb3 }) => {
         </div>
         <div className=" gap-4 grid-flow-col hidden md:grid">
           <div className="hidden lg:block">
-            <Link to="/game">
+            <a href="#mint">
               <Button>Mint now</Button>
-            </Link>
+            </a>
           </div>
           <Button onClick={loadWeb3}>
             {" "}
@@ -84,9 +76,9 @@ const Index = ({ account, mint, loadWeb3 }) => {
               Game
             </CustomLink>
           </li>
-          <Link to="/game">
+          <a href="#mint">
             <Button>Mint now</Button>
-          </Link>
+          </a>
           <Button onClick={loadWeb3}>
             {account
               ? account.slice(0, 8) + "..." + account.slice(account.length - 5)

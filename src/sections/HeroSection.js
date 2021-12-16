@@ -10,9 +10,9 @@ const HeroSection = () => {
           Mint your's, start Racing
         </h1>
         <div className="text-center mt-8">
-          <Link to="/game">
+          <a href="#mint">
             <WhiteButton>Mint Now</WhiteButton>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
