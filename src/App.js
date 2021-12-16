@@ -266,7 +266,7 @@ function App() {
         open={switchToMainnet}
         onClose={setswitchToMainnet}
         title="Error"
-        text="Please switch to mainnet to mint Jawbreakerz"
+        text="Please switch to mainnet to mint Horse"
       />
       <InformationModal
         open={ethereumCompatibleBrowser}
