@@ -87,7 +87,11 @@ const Index = ({ account, mint, loadWeb3 }) => {
           <Link to="/game">
             <Button>Mint now</Button>
           </Link>
-          <Button>Connect Wallet</Button>
+          <Button onClick={loadWeb3}>
+            {account
+              ? account.slice(0, 8) + "..." + account.slice(account.length - 5)
+              : "CONNECT WALLET"}
+          </Button>
         </ul>
       </div>
     </header>
