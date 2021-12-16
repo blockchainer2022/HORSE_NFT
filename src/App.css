@@ -4,3 +4,6 @@ body {
 body .Toastify {
   font-size: 16px;
 }
+html {
+  scroll-behavior: smooth;
+}
