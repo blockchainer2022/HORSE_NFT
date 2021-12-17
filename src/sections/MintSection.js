@@ -19,14 +19,14 @@ const MintSection = ({
       setValue(0);
     } else {
       if (reg.test(Number(e.target.value))) {
-        if (Number(e.target.value) <= 20) {
+        if (Number(e.target.value) <= 3) {
           setValue(e.target.value);
         }
       }
     }
   };
   const increse = () => {
-    if (value < 20) {
+    if (value < 3) {
       setValue((prev) => Number(prev) + 1);
     }
   };
