@@ -338,6 +338,15 @@ export const contractAbi = [
     type: "function",
   },
   {
+    inputs: [
+      { internalType: "bool", name: "_presaleWhiteListRequired", type: "bool" },
+    ],
+    name: "setPresaleWhiteListRequired",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
     inputs: [{ internalType: "uint256", name: "_newPrice", type: "uint256" }],
     name: "setPrice",
     outputs: [],
@@ -444,4 +453,4 @@ export const contractAbi = [
   },
 ];
 // export const contractAddress = "0xD73eE48F78da0B851892A60772acC9d0218374FE";
-export const contractAddress = "0x90C84C09B1433b55376849aB6A109FA04de4e103";
+export const contractAddress = "0xdCf46E795a2c8989Ad550251C8E7D89bF9F8cC87";
