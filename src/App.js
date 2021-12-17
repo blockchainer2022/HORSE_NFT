@@ -237,7 +237,7 @@ function App() {
         open={lessMintAmountAlert}
         onClose={setLessMintAmountAlert}
         title="Oops"
-        text="Atleast 1 Jawbreakerz should be minted"
+        text="Atleast 1 Horse should be minted"
       />
       <InformationModal
         open={accessAccountDenied}
