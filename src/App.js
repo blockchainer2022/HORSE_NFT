@@ -149,7 +149,7 @@ function App() {
               setConfirmTransaction(true);
               const finalPrice = Number(price) * mintCount;
               contract.methods
-                .mintNFT(mintCount)
+                .presaleMintNFT(mintCount)
                 .send({ from: account, value: finalPrice })
                 .on("transactionHash", function () {
                   setConfirmTransaction(false);
